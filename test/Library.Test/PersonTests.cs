@@ -6,16 +6,20 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
+        [TestFixture]
+        /*[SetUp]
         public void Setup()
         {
             // Insertá tu código de inicialización aquí
-        }
+        } */
 
         [Test]
-        public void Test1() // Cambiá el nombre para indicar qué estás probando
+        public void TestName() // Cambiá el nombre para indicar qué estás probando
         {
-            // Insertá tu código  de pruebaaquí
+            Person john = new Person("John Doe", "5.212.287-6");
+            string expected = "John Doe";
+            Assert.AreEqual(expected, john.Name);
+
         }
     }
 }
