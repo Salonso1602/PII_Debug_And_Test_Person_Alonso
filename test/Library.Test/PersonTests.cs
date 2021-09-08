@@ -4,9 +4,9 @@ using UnitTestAndDebug;
 
 namespace Tests
 {
+    [TestFixture]
     public class Tests
     {
-        [TestFixture]
         /*[SetUp]
         public void Setup()
         {
