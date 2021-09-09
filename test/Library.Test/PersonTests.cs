@@ -14,11 +14,11 @@ namespace Tests
         } */
 
         [Test]
-        public void TestName() // Cambiá el nombre para indicar qué estás probando
+        public void TestFC() // Cambiá el nombre para indicar qué estás probando
         {
-            Person john = new Person("John Doe", "5.212.287-6");
-            string expected = "John Doe";
-            Assert.AreEqual(expected, john.Name);
+            Person john = new Person("John Doe", "5.212.287-6", "16/08/2002");
+            string expected = "16/08/2002";
+            Assert.AreEqual(expected, john.FechaNacimiento);
 
         }
     }
